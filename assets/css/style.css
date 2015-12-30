@@ -1,4 +1,4 @@
-* {
+div, nav, button, input {
 	border-radius: 0 !important;
 }
 
@@ -8,11 +8,18 @@ button, input, select, textarea {
 	letter-spacing: 0.05em;
 }
 
+body {
+	padding-bottom: 300px;
+}
+
 ::-webkit-input-placeholder {
 	color: #ccc !important;
 }
 /* Nav Bar */
 
+.navbar {
+	margin-bottom: 0;
+}
 .navbar-brand {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 700;
@@ -45,3 +52,115 @@ button, input, select, textarea {
 }
 
 /* slider area */
+
+#bzns-slider {
+	-webkit-box-shadow: 0px -5px 12px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px -5px 12px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px -5px 12px 0px rgba(0,0,0,0.1);
+
+	background-color: #262626;
+	background-image: url('../img/bgPtrn99.png');
+}
+
+.bzns-slide {
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	color: #fff;
+}
+
+.bzns-slide img.bzns-profile{
+	width: 190px;
+	border: 10px solid #fff;
+	-webkit-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.75);
+}
+
+.rev-desc {
+	margin-top: 25px;
+}
+
+.rev-desc img {
+	width: 120px;
+	vertical-align: text-bottom;
+}
+
+.rev-desc span {
+	margin-left: 10px;
+	font-size: 1.1em;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+
+.rev-desc span span{
+	border-left: 1px solid #fff;
+	padding-left: 5px;
+}
+
+.rev-desc h3{
+	margin-top: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 1.35em;
+	letter-spacing: 0.05em;
+}
+.rev-desc h3 span{
+	border-left: 2px solid #fff;
+	padding-left: 10px;
+}
+
+.rev-desc p{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300 !important;
+	font-size: 1.05em;
+	margin-top: 20px;
+}
+
+@media (min-width: 768px){
+.rev-desc p{
+	padding: 0 100px;
+}
+}
+
+/* Registration area */
+
+#reg-area {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+#reg-area>div>div {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#reg-area>div>div:first-child{
+	border-right: 1px solid #e0e0e0;
+}
+
+#reg-area>div>div h2{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 2.5em;
+	margin-bottom: 0px;
+}
+
+#reg-area>div>div p{
+	color: #8a8a8a;
+	letter-spacing: 0.22em;
+}
+
+#reg-area .btn-reg {
+	background-color: #fff;
+	border: 5px solid #ffcc00;
+	padding: 5px 40px;
+	margin-top: 20px;
+	font-weight: 700!important;
+	color: #ffcc00;
+}
+
+#reg-area .btn-find.focus, #reg-area .btn-find:focus, #reg-area .btn-reg:hover {
+	color: #fff;
+	background-color: #ffcc00;
+}
