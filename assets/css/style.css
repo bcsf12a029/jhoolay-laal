@@ -1,0 +1,47 @@
+* {
+	border-radius: 0 !important;
+}
+
+button, input, select, textarea {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400 !important;
+	letter-spacing: 0.05em;
+}
+
+::-webkit-input-placeholder {
+	color: #ccc !important;
+}
+/* Nav Bar */
+
+.navbar-brand {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	color: #fff !important;
+}
+
+@media (min-width: 768px){
+.navbar-form .form-group {
+	width: 400px;
+}
+.navbar-form .form-control{
+	width: 100%;
+}
+}
+
+.navbar-inverse {
+	background-color: #262626;
+	border-color: #262626;
+}
+
+.btn-find {
+	background-color: #313131;
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.btn-find.focus, .btn-find:focus, .btn-find:hover{
+	color: #ccc;
+}
+
+/* slider area */
