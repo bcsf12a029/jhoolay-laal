@@ -1,4 +1,4 @@
-div, nav, button, input {
+div, nav, button, input, select {
 	border-radius: 0 !important;
 }
 
@@ -36,8 +36,8 @@ body {
 }
 
 .navbar-inverse {
-	background-color: #262626;
-	border-color: #262626;
+	background-color: #1d1d1d;
+	border-color: #1d1d1d;
 }
 
 .btn-find {
@@ -126,8 +126,8 @@ body {
 /* Registration area */
 
 #reg-area {
-	padding-top: 60px;
-	padding-bottom: 30px;
+	padding-top: 80px;
+	padding-bottom: 60px;
 }
 
 #reg-area>div>div {
@@ -157,10 +157,31 @@ body {
 	padding: 5px 40px;
 	margin-top: 20px;
 	font-weight: 700!important;
+	font-size: 1.5em;
 	color: #ffcc00;
 }
 
 #reg-area .btn-find.focus, #reg-area .btn-find:focus, #reg-area .btn-reg:hover {
 	color: #fff;
 	background-color: #ffcc00;
+}
+
+/* Select City Bar */
+
+.city-select {
+	text-align: center;
+	padding: 50px 0;
+	background-image: url('../img/bgPtrn101.png');
+
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+}
+
+.city-select .form-control{
+	display: inline-block;
+	width: 70%;
+	height: 50px;
+	font-size: 1.5em !important;
+	font-weight: 700 !important;
 }
