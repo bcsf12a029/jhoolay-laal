@@ -1,0 +1,20 @@
+<div class="panel panel-default bzns-panel">
+	<div class="panel-heading" role="tab" id="headingOne">
+	  <h4 class="panel-title">
+	    <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+	      <img src="{{bznsObj.profileImg}}" class="bzns-profile img-circle">
+	      <h3>{{bznsObj.name}} <small>{{bznsObj.address}} {{bznsObj.city}}</small></h3>
+	      <img class="pull-left stars" src="assets/img/dummy/stars.png">
+	      <span>{{bznsObj.avgRating}}/5 <span>{{bznsObj.totalReviews | number}} Reviews</span></span>
+	      <p>
+	      	{{bznsObj.description}}
+	      </p>
+	    </a>
+	  </h4>
+	</div>
+	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+	  <div class="panel-body">
+	    Comments here
+	  </div>
+	</div>
+</div>

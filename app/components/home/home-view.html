@@ -1,1 +1,49 @@
-<h1>Home</h1>
+<!-- Slider -->
+<business-slider slides-data="hc.top3Biz"></business-slider>
+<!-- / Slider -->
+
+<!-- Find Business -->
+<div id="find-bzns-inp" class="row">
+	<div class="input-group col-md-8 col-md-offset-2">
+      <input type="text" class="form-control" placeholder="type name of business to find">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Find!</button>
+      </span>
+    </div>
+</div>
+<!-- /Find Business -->
+
+<!-- Registration area -->
+<div id="reg-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div>
+					<h2>REGISTER YOUR BUSINESS NOW</h2>
+					<p>Let People Decide Standards</p>
+					<button class="btn btn-reg">REGISTER</button>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div>
+					<h2>SHARE YOUR EXPERIENCES</h2>
+					<p>Help People Find The Best</p>
+					<button class="btn btn-reg">SIGN UP</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Registration area -->
+
+<!-- City Selection -->
+<div class="city-select">
+	<select class="form-control">
+		<option ng-repeat="c in hc.cities" ng-selected="$index==0">{{c}}</option>
+	</select>
+</div>
+<!-- /City Selection -->
+
+<!-- Top Businesses -->
+<biz-display-panel categories="hc.categories" bzns-data="hc.top3Biz"></biz-display-panel>
+<!-- /Top Businesses -->

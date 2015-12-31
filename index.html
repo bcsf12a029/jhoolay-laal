@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="">
+<html ng-app="brApp">
 <head>
 	<title>Br |HOME</title>
 	<link rel="stylesheet" type="text/css" href="assets/libs/css/bootstrap.min.css">
@@ -35,227 +35,26 @@
 	</nav>
 	<!-- / NAV BAR -->
 
-	<!-- Slider -->
-	<div id="bzns-slider" class="carousel slide" data-ride="carousel">
-	  <!-- Indicators
-	  <ol class="carousel-indicators">
-	    <li data-target="#bzns-slider" data-slide-to="0" class="active"></li>
-	    <li data-target="#bzns-slider" data-slide-to="1"></li>
-	    <li data-target="#bzns-slider" data-slide-to="2"></li>
-	  </ol>
-	  -->
-
-	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner" role="listbox">
-	    <div class="item active">
-	      <div class="bzns-slide">
-	      	<div class="container">
-		      	<img src="assets/img/dummy/kfc-profile-img.png" class="img-circle bzns-profile">
-		      	<div class="rev-desc">
-		      		<img class="stars" src="assets/img/dummy/stars.png">
-		      		<span>3.5/5 <span>100,234,781 Reviews</span></span>
-		      		<h3>KFC <span>Chowk chuburji Nazd Umer Burger Lahore</span></h3>
-		      		<p>
-		      			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		      			consequat. Duis aute irure dolor.
-		      		</p>
-		      	</div>
-	      	</div>
-	      </div>
-	    </div>
-	    <div class="item">
-	      <div class="bzns-slide">
-	      	<div class="container">
-		      	<img src="assets/img/dummy/burger-king.jpg" class="img-circle bzns-profile">
-		      	<div class="rev-desc">
-		      		<img class="stars" src="assets/img/dummy/stars.png">
-		      		<span>3.5/5 <span>100,234,781 Reviews</span></span>
-		      		<h3>Burger King <span>Anarkali bazar Lahore</span></h3>
-		      		<p>
-		      			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      			quis nostrud exercitation ullamco laboris.
-		      		</p>
-		      	</div>
-	      	</div>
-	      </div>
-	    </div>
-	    <div class="item">
-	      <div class="bzns-slide">
-	      	<div class="container">
-		      	<img src="assets/img/dummy/shaukat-khanam.jpg" class="img-circle bzns-profile">
-		      	<div class="rev-desc">
-		      		<img class="stars" src="assets/img/dummy/stars.png">
-		      		<span>3.5/5 <span>100,234,781 Reviews</span></span>
-		      		<h3>Shoukat Khanam Cancer Hospital <span>Raiwind Road Lahore</span></h3>
-		      		<p>
-		      			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      			quis nostrud exercitation ullamco laboris.
-		      		</p>
-		      	</div>
-	      	</div>
-	      </div>
-	    </div>
-	  </div>
-
-	  <!-- Controls -->
-	  <a class="left carousel-control" href="#bzns-slider" role="button" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="right carousel-control" href="#bzns-slider" role="button" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
-	</div>
-	<!-- / Slider -->
-
-	<!-- Find Business -->
-	<div id="find-bzns-inp" class="row">
-		<div class="input-group col-md-8 col-md-offset-2">
-	      <input type="text" class="form-control" placeholder="type name of business to find">
-	      <span class="input-group-btn">
-	        <button class="btn btn-default" type="button">Find!</button>
-	      </span>
-	    </div><!-- /input-group -->
-	</div>
-	<!-- /Find Business -->
-
-	<!-- Registration area -->
-	<div id="reg-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div>
-						<h2>REGISTER YOUR BUSINESS NOW</h2>
-						<p>Let People Decide Standards</p>
-						<button class="btn btn-reg">REGISTER</button>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div>
-						<h2>SHARE YOUR EXPERIENCES</h2>
-						<p>Help People Find The Best</p>
-						<button class="btn btn-reg">SIGN UP</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /Registration area -->
-
-	<!-- City Selection -->
-	<div class="city-select">
-		<select class="form-control">
-			<option selected>Lahore</option>
-			<option>Karachi</option>
-			<option>Islamabad</option>
-			<option>Rawalpindi</option>
-			<option>Multan</option>
-			<option>Murree</option>
-			<option>Faisalabad</option>
-		</select>
-	</div>
-	<!-- /City Selection -->
-
-	<!-- Top Businesses -->
-	<div id="top-bzns">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2">
-					<ul class="nav nav-pills nav-stacked">
-					  <li role="presentation"><a href="#">Food</a></li>
-					  <li role="presentation" class="active"><a href="#">Real Estate</a></li>
-					  <li role="presentation"><a href="#">Clothes</a></li>
-					  <li role="presentation"><a href="#">Medical</a></li>
-					  <li role="presentation"><a href="#">Education</a></li>
-					  <li role="presentation"><a href="#">Transport</a></li>
-					  <li role="presentation"><a href="#">Furniture</a></li>
-					  <li role="presentation"><a href="#">Shopping</a></li>
-					</ul>
-				</div>
-				<div class="col-md-10">
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					  <div class="panel panel-default bzns-panel">
-					    <div class="panel-heading" role="tab" id="headingOne">
-					      <h4 class="panel-title">
-					        <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					          <img src="assets/img/dummy/burger-king.jpg" class="bzns-profile img-circle">
-					          <h3>Burger King <small>Urdu Bazar Lahore</small></h3>
-					          <img class="pull-left stars" src="assets/img/dummy/stars.png">
-					          <span>3.5/5 <span>100,435,909 Reviews</span></span>
-					          <p>
-					          	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					          	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					          	quis nostrud exercitation ullamco.
-					          </p>
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-					      <div class="panel-body">
-					        Comments here
-					      </div>
-					    </div>
-					  </div>
-					  <div class="panel panel-default bzns-panel">
-					    <div class="panel-heading" role="tab" id="headingTwo">
-					      <h4 class="panel-title">
-					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-					          <img src="assets/img/dummy/kfc-profile-img.png" class="bzns-profile img-circle">
-					          <h3>KFC <small>Lunda Bazar Railway Lahore</small></h3>
-					          <img class="pull-left stars"src="assets/img/dummy/stars.png">
-					          <span>3.5/5 <span>300,555,201 Reviews</span></span>
-					          <p>
-					          	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					          	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					          	quis.
-					          </p>
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-					      <div class="panel-body">
-					        Comments here
-					      </div>
-					    </div>
-					  </div>
-					  <div class="panel panel-default bzns-panel">
-					    <div class="panel-heading" role="tab" id="headingThree">
-					      <h4 class="panel-title">
-					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					          <img src="assets/img/dummy/shaukat-khanam.jpg" class="bzns-profile img-circle">
-					          <h3>Shaukat Khanam Memorial <small>Raiwind Road Lahore</small></h3>
-					          <img class="pull-left stars"src="assets/img/dummy/stars.png">
-					          <span>3.5/5 <span>200,195,100 Reviews</span></span>
-					          <p>
-					          	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					          	tempor incididunt ut labore et dolore magna aliqua.
-					          </p>
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-					      <div class="panel-body">
-					        Comments here
-					      </div>
-					    </div>
-					  </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /Top Businesses -->
+	<div ng-view></div>
 	
 <!-- Scripts -->
 <script type="text/javascript" src="assets/libs/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="assets/libs/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/libs/js/angular.min.js"></script>
 <script type="text/javascript" src="assets/libs/js/angular-route.min.js"></script>
+
+<script type="text/javascript" src="assets/js/dummy.js"></script>
+
+<script type="text/javascript" src="app/app-module.js"></script>
+<script type="text/javascript" src="app/app-route.js"></script>
+
+<script type="text/javascript" src="app/shared/bzns-slide/bzns-slide-dir.js"></script>
+<script type="text/javascript" src="app/shared/bzns-slider/bzns-slider-dir.js"></script>
+<script type="text/javascript" src="app/shared/bzns-display-panel/display-panel-dir.js"></script>
+<script type="text/javascript" src="app/shared/bzns-panel-profile/panel-profile-dir.js"></script>
+<script type="text/javascript" src="app/components/home/home-controller.js"></script>
+
+
 <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
