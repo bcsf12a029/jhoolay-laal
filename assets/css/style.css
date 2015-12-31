@@ -286,6 +286,7 @@ body {
 
 .bzns-panel .panel-heading:hover{
 	border-right: 5px solid #ffcc00;
+	background-color: rgba(29,29,29,0.02);
 }
 
 .panel-heading a:focus,.panel-heading a:hover{
