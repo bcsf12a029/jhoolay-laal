@@ -10,6 +10,7 @@ button, input, select, textarea {
 
 body {
 	padding-bottom: 300px;
+	background: url('../img/bgPtrn101.png') fixed;
 }
 
 ::-webkit-input-placeholder {
@@ -126,44 +127,51 @@ body {
 /* Registration area */
 
 #reg-area {
+	background-color: rgba(0,0,0,.9);
+}
+
+#reg-area>div {
 	padding-top: 80px;
 	padding-bottom: 60px;
 }
 
-#reg-area>div>div {
+#reg-area>div>div>div {
 	text-align: center;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
-#reg-area>div>div:first-child{
+#reg-area>div>div>div:first-child{
 	border-right: 1px solid #e0e0e0;
 }
 
-#reg-area>div>div h2{
+#reg-area>div>div>div h2{
 	font-family: 'Oswald', sans-serif;
 	font-weight: 700;
 	font-size: 2.5em;
 	margin-bottom: 0px;
+	letter-spacing: 0.05em;
+	color: #fff;
 }
 
-#reg-area>div>div p{
-	color: #8a8a8a;
+#reg-area>div>div>div p{
+	color: #505050;
 	letter-spacing: 0.22em;
+	text-shadow: 1px 1px 2px #000;
 }
 
 #reg-area .btn-reg {
-	background-color: #fff;
-	border: 5px solid #ffcc00;
+	background-color: #ffcc00;
 	padding: 5px 40px;
 	margin-top: 20px;
 	font-weight: 700!important;
 	font-size: 1.5em;
-	color: #ffcc00;
+	color: #fff;
 }
 
 #reg-area .btn-find.focus, #reg-area .btn-find:focus, #reg-area .btn-reg:hover {
-	color: #fff;
-	background-color: #ffcc00;
+	color: #ffcc00;
+	background-color: #fff;
+	border: 1px solid #ffcc00;
 }
 
 /* Select City Bar */
@@ -171,11 +179,6 @@ body {
 .city-select {
 	text-align: center;
 	padding: 50px 0;
-	background-image: url('../img/bgPtrn101.png');
-
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
--moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
 }
 
 .city-select .form-control{
