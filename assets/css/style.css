@@ -1,4 +1,4 @@
-div, nav, button, input, select {
+div, nav, button, input, select, a {
 	border-radius: 0 !important;
 }
 
@@ -9,7 +9,7 @@ button, input, select, textarea {
 }
 
 body {
-	padding-bottom: 300px;
+	padding-bottom: 800px;
 	background: url('../img/bgPtrn101.png') fixed;
 }
 
@@ -55,9 +55,9 @@ body {
 /* slider area */
 
 #bzns-slider {
-	-webkit-box-shadow: 0px -5px 12px 0px rgba(0,0,0,0.1);
-	-moz-box-shadow: 0px -5px 12px 0px rgba(0,0,0,0.1);
-	box-shadow: 0px -5px 12px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px -5px 12px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px -5px 12px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px -5px 12px 0px rgba(0,0,0,0.2);
 
 	background-color: #262626;
 	background-image: url('../img/bgPtrn99.png');
@@ -127,17 +127,20 @@ body {
 /* Registration area */
 
 #reg-area {
-	background-color: rgba(0,0,0,.9);
+	background-color: rgba(0,0,0,.93);
+	border-top: 5px solid #fff;
 }
 
 #reg-area>div {
-	padding-top: 80px;
+	padding-top: 60px;
 	padding-bottom: 60px;
 }
 
 #reg-area>div>div>div {
+	display: inline-block;
 	text-align: center;
-	padding-bottom: 10px;
+	/padding-bottom: 10px;
+	padding: 10px 0;
 }
 
 #reg-area>div>div>div:first-child{
@@ -151,11 +154,13 @@ body {
 	margin-bottom: 0px;
 	letter-spacing: 0.05em;
 	color: #fff;
+	text-shadow: 1px 1px 2px #000;
 }
 
 #reg-area>div>div>div p{
 	color: #505050;
-	letter-spacing: 0.22em;
+	letter-spacing: 0.42em;
+	word-spacing: 0.3em;
 	text-shadow: 1px 1px 2px #000;
 }
 
@@ -169,9 +174,8 @@ body {
 }
 
 #reg-area .btn-find.focus, #reg-area .btn-find:focus, #reg-area .btn-reg:hover {
-	color: #ffcc00;
-	background-color: #fff;
-	border: 1px solid #ffcc00;
+	background-color: transparent;
+	border: 1px solid #fff;
 }
 
 /* Select City Bar */
@@ -187,4 +191,38 @@ body {
 	height: 50px;
 	font-size: 1.5em !important;
 	font-weight: 700 !important;
+}
+
+/* Top Businesses area */
+
+#top-bzns {
+	padding: 90px 0;
+}
+
+#top-bzns .row>div {
+	padding:0;
+	height: 100% !important;
+}
+
+#top-bzns .row>div:first-child li a {
+	background-color: #1d1d1d;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+#top-bzns .row>div:first-child li.active a, #top-bzns .row>div:first-child li a:hover{
+	background-color: #fff;
+	color: #1d1d1d;
+}
+
+#top-bzns .row>div:first-child li{
+	margin-top: 0;
+	border-top: 1px solid #2b2b2b;
+	box-shadow: 0px -1px 0px #111;
+}
+
+#top-bzns .row>div:first-child li:first-child{
+	border-top: none;
+	box-shadow: none;
 }
