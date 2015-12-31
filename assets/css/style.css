@@ -19,7 +19,7 @@ body {
 }
 
 ::-webkit-input-placeholder {
-	color: #ccc !important;
+	color: #cdcdcd !important;
 }
 /* Nav Bar */
 
@@ -132,24 +132,25 @@ body {
 /* Registration area */
 
 #reg-area {
-	background-color: rgba(0,0,0,.93);
-	border-top: 5px solid #fff;
+	background-image: url('../img/bgPtrn54.jpg');
 }
 
 #reg-area>div {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	background-color: rgba(0,0,0,0.3);
 }
 
 #reg-area>div>div>div {
 	display: inline-block;
 	text-align: center;
-	/padding-bottom: 10px;
 	padding: 10px 0;
 }
 
+@media (min-width: 768px){
 #reg-area>div>div>div:first-child{
 	border-right: 1px solid #e0e0e0;
+}
 }
 
 #reg-area>div>div>div h2{
@@ -163,7 +164,7 @@ body {
 }
 
 #reg-area>div>div>div p{
-	color: #505050;
+	color: #ffcc00;
 	letter-spacing: 0.42em;
 	word-spacing: 0.3em;
 	text-shadow: 1px 1px 2px #000;
@@ -183,14 +184,15 @@ body {
 	border: 1px solid #fff;
 }
 
-/* Select City Bar */
+/* Select City Bar and Find Business bar*/
 
-.city-select {
+.city-select, #find-bzns-inp {
 	text-align: center;
-	padding: 50px 0;
+	padding: 100px 0;
+	background-color: rgba(255,255,255,0.5);
 }
 
-.city-select .form-control{
+.city-select .form-control {
 	display: inline-block;
 	width: 70%;
 	height: 50px;
@@ -198,11 +200,25 @@ body {
 	font-weight: 700 !important;
 }
 
+#find-bzns-inp input {
+	height: 50px;
+	font-size: 1.5em !important;
+	font-weight: 700 !important;
+	letter-spacing: 0.1em !important;
+}
+
+#find-bzns-inp button{
+	padding: 14px;
+	background-color: #1d1d1d;
+	color: #fff;
+	font-weight: 700 !important;
+}
+
 /* Top Businesses area */
 
 #top-bzns {
-	padding: 90px 0;
-	background-color: rgba(0,0,0,0.93);
+	padding-bottom: 90px;
+	padding-top: 0;
 }
 
 #top-bzns .row>div {
