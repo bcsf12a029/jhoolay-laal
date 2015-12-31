@@ -52,7 +52,7 @@
 	      	<div class="container">
 		      	<img src="assets/img/dummy/kfc-profile-img.png" class="img-circle bzns-profile">
 		      	<div class="rev-desc">
-		      		<img src="assets/img/dummy/stars.png">
+		      		<img class="stars" src="assets/img/dummy/stars.png">
 		      		<span>3.5/5 <span>100,234,781 Reviews</span></span>
 		      		<h3>KFC <span>Chowk chuburji Nazd Umer Burger Lahore</span></h3>
 		      		<p>
@@ -70,7 +70,7 @@
 	      	<div class="container">
 		      	<img src="assets/img/dummy/burger-king.jpg" class="img-circle bzns-profile">
 		      	<div class="rev-desc">
-		      		<img src="assets/img/dummy/stars.png">
+		      		<img class="stars" src="assets/img/dummy/stars.png">
 		      		<span>3.5/5 <span>100,234,781 Reviews</span></span>
 		      		<h3>Burger King <span>Anarkali bazar Lahore</span></h3>
 		      		<p>
@@ -87,7 +87,7 @@
 	      	<div class="container">
 		      	<img src="assets/img/dummy/shaukat-khanam.jpg" class="img-circle bzns-profile">
 		      	<div class="rev-desc">
-		      		<img src="assets/img/dummy/stars.png">
+		      		<img class="stars" src="assets/img/dummy/stars.png">
 		      		<span>3.5/5 <span>100,234,781 Reviews</span></span>
 		      		<h3>Shoukat Khanam Cancer Hospital <span>Raiwind Road Lahore</span></h3>
 		      		<p>
@@ -150,8 +150,21 @@
 	</div>
 	<!-- /Registration area -->
 
-	<!-- Top Businesses -->
+	<!-- City Selection -->
+	<div class="city-select">
+		<select class="form-control">
+			<option selected>Lahore</option>
+			<option>Karachi</option>
+			<option>Islamabad</option>
+			<option>Rawalpindi</option>
+			<option>Multan</option>
+			<option>Murree</option>
+			<option>Faisalabad</option>
+		</select>
+	</div>
+	<!-- /City Selection -->
 
+	<!-- Top Businesses -->
 	<div id="top-bzns">
 		<div class="container">
 			<div class="row">
@@ -169,59 +182,68 @@
 				</div>
 				<div class="col-md-10">
 					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					  <div class="panel panel-default">
+					  <div class="panel panel-default bzns-panel">
 					    <div class="panel-heading" role="tab" id="headingOne">
 					      <h4 class="panel-title">
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					          Collapsible Group Item #1
+					        <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					          <img src="assets/img/dummy/burger-king.jpg" class="bzns-profile img-circle">
+					          <h3>Burger King <small>Urdu Bazar Lahore</small></h3>
+					          <img class="pull-left stars" src="assets/img/dummy/stars.png">
+					          <span>3.5/5 <span>100,435,909 Reviews</span></span>
+					          <p>
+					          	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					          	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					          	quis nostrud exercitation ullamco.
+					          </p>
 					        </a>
 					      </h4>
 					    </div>
-					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 					      <div class="panel-body">
-					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					        Comments here
 					      </div>
 					    </div>
 					  </div>
-					  <div class="panel panel-default">
+					  <div class="panel panel-default bzns-panel">
 					    <div class="panel-heading" role="tab" id="headingTwo">
 					      <h4 class="panel-title">
 					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-					          Collapsible Group Item #4
+					          <img src="assets/img/dummy/kfc-profile-img.png" class="bzns-profile img-circle">
+					          <h3>KFC <small>Lunda Bazar Railway Lahore</small></h3>
+					          <img class="pull-left stars"src="assets/img/dummy/stars.png">
+					          <span>3.5/5 <span>300,555,201 Reviews</span></span>
+					          <p>
+					          	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					          	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					          	quis.
+					          </p>
 					        </a>
 					      </h4>
 					    </div>
 					    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 					      <div class="panel-body">
-					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					        Comments here
 					      </div>
 					    </div>
 					  </div>
-					  <div class="panel panel-default">
-					    <div class="panel-heading" role="tab" id="headingTwo">
-					      <h4 class="panel-title">
-					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					          Collapsible Group Item #2
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-					      <div class="panel-body">
-					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					      </div>
-					    </div>
-					  </div>
-					  <div class="panel panel-default">
+					  <div class="panel panel-default bzns-panel">
 					    <div class="panel-heading" role="tab" id="headingThree">
 					      <h4 class="panel-title">
 					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					          Collapsible Group Item #3
+					          <img src="assets/img/dummy/shaukat-khanam.jpg" class="bzns-profile img-circle">
+					          <h3>Shaukat Khanam Memorial <small>Raiwind Road Lahore</small></h3>
+					          <img class="pull-left stars"src="assets/img/dummy/stars.png">
+					          <span>3.5/5 <span>200,195,100 Reviews</span></span>
+					          <p>
+					          	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					          	tempor incididunt ut labore et dolore magna aliqua.
+					          </p>
 					        </a>
 					      </h4>
 					    </div>
 					    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 					      <div class="panel-body">
-					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					        Comments here
 					      </div>
 					    </div>
 					  </div>
