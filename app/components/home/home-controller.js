@@ -1,6 +1,19 @@
-app.controller('homeController', [function(){
+app.controller('homeController', ['home', function(home){
 	
-	this.top3Biz = appData.top3Biz;
-	this.cities = appData.cities;
-	this.categories = appData.categories;
+	var that = this;
+	this.top3Biz = null;
+	this.cities = null
+	this.categories = null;
+
+	home.getTopBzns().then(function(data){
+		that.top3Biz = data;
+	});
+
+	home.getCities().then(function(data){
+		that.cities = data;
+	});
+
+	home.getCategories().then(function(data){
+		that.categories = data;
+	});
 }]);
