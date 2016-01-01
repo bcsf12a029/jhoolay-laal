@@ -1,4 +1,4 @@
-app.controller('homeController', ['$scope', 'home', '$cookies', function($scope,home,$cookies){
+app.controller('homeController', ['$scope', 'home', 'user', function($scope,home,user){
 	
 	var that = this;
 
@@ -19,12 +19,7 @@ app.controller('homeController', ['$scope', 'home', '$cookies', function($scope,
 	});
 
 
-	this.city = {id:$cookies.get('city')};
-
-	this.setCity = function(){
-		var now = new Date();
-		var exp = new Date(now.getFullYear()+1, now.getMonth());
-		$cookies.put('city', that.city.id, {expires:exp});
-	}
+	this.city = user.city;
+	this.setCity = angular.bind(this, user.setCity);
 
 }]);
