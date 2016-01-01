@@ -38,10 +38,9 @@
 
 <!-- City Selection -->
 <div class="city-select">
-	<select class="form-control">
-		<option ng-repeat="c in hc.cities" ng-selected="$index==0">{{c}}</option>
-	</select>
+	<select ng-model="hc.city" ng-change="hc.setCity()" ng-options="c as c.name for c in hc.cities track by c.id" class="form-control"></select>
 </div>
+
 <!-- /City Selection -->
 
 <!-- Top Businesses -->

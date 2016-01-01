@@ -285,6 +285,9 @@ body {
 	margin-left: 8px;
 }
 
+.bzns-panel .panel-heading{
+	border-right: 5px solid #1d1d1d;
+}
 .bzns-panel .panel-heading:hover{
 	border-right: 5px solid #ffcc00;
 	background-color: rgba(29,29,29,0.02);

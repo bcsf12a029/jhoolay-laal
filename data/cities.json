@@ -1,10 +1,11 @@
 [
-	"Lahore",
-	"Karachi",
-	"Islamabad",
-	"Rawalpindi",
-	"Multan",
-	"Sargodha",
-	"Faisalabad",
-	"Peshawar"
+	{"id":1, "name":"Lahore"},
+	{"id":2, "name":"Karachi"},
+	{"id":3, "name":"Islamabad"},
+	{"id":4, "name":"Rawalpindi"},
+	{"id":5, "name":"Multan"},
+	{"id":6, "name":"Sargodha"},
+	{"id":7, "name":"Faisalabad"},
+	{"id":8, "name":"Peshawar"},
+	{"id":9, "name":"Quetta"}
 ]
