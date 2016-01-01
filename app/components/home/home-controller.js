@@ -18,7 +18,6 @@ app.controller('homeController', ['$scope', 'home', 'user', function($scope,home
 		that.categories = data;
 	});
 
-
 	this.city = user.city;
 	this.setCity = angular.bind(this, user.setCity);
 

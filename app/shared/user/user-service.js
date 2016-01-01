@@ -18,6 +18,5 @@ app.factory('user', ['$cookies', function($cookies){
 		setCookie(cookies.city, u.city.id);
 	};
 
-
 	return u;
 }]);

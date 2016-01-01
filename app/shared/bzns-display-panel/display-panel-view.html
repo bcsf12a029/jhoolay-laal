@@ -2,15 +2,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-				<ul class="nav nav-pills nav-stacked">
-				  <li role="presentation" ng-class="{active:$index==1}" ng-repeat="c in categories">
-				  	<a href="#changeCtg" target="_self">{{c}}</a>
+				<ul id="categories" class="nav nav-pills nav-stacked">
+				  <li role="presentation" ng-class="{active:bdpc.category==c.id}" ng-repeat="c in categories">
+				  	<a href="#/category/{{c.id}}" ng-hashchange="bdpc.changeCategory()">{{c.name}}</a>
 				  </li>
 				</ul>
 			</div>
 			<div class="col-md-10">
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-				  <panel-profile bzns-obj="b" ng-repeat="b in bznsData"></panel-profile>
+				  <panel-profile bzns-obj="b" ng-repeat="b in bdpc.panelData"></panel-profile>
+				  <p ng-show="bdpc.panelData.length==0">Nothing to display.</p>
 				</div>
 			</div>
 		</div>
