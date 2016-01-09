@@ -1,4 +1,4 @@
-app.controller('homeController', ['$scope', 'home', 'user', function($scope,home,user){
+app.controller('homeController', ['$scope', 'home', 'userSrvc', function(scope,home,user){
 	
 	var that = this;
 	

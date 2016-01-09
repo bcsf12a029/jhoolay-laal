@@ -1,4 +1,4 @@
-app.factory('user', ['$cookies', function($cookies){
+app.factory('userSrvc', ['$cookies', function($cookies){
 
 	var u={};
 	var cookies={
