@@ -37,7 +37,6 @@ app.factory('bznsDispPanelSrvc', ['$cookies', '$http', '$q', function($cookies, 
 		var d = $q.defer();
 
 		$http.get(getDataFileName(id)).then(function(data){
-			console.log(data);
 			d.resolve(angular.fromJson(data.data));
 			d.reject(data.data);
 		})
