@@ -1,4 +1,4 @@
-app.factory('bizDispPanel', ['$cookies', '$http', '$q', function($cookies, $http, $q){
+app.factory('bznsDispPanelSrvc', ['$cookies', '$http', '$q', function($cookies, $http, $q){
 
 	var o={};
 	var cookies={
@@ -42,6 +42,14 @@ app.factory('bizDispPanel', ['$cookies', '$http', '$q', function($cookies, $http
 			d.reject(data.data);
 		})
 
+		return d.promise;
+	};
+
+	o.getCategories = function(){
+		var d = $q.defer();
+		$http.get('data/categories.json').then(function(data){
+			d.resolve(angular.fromJson(data.data));
+		});
 		return d.promise;
 	};
 

@@ -1,0 +1,38 @@
+<div id="top-bzns">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<ul id="categories" class="nav nav-pills nav-stacked">
+				  <li role="presentation" ng-class="{active:bdpc.category==c.id}" ng-repeat="c in categories">
+				  	<a href="#/category/{{c.id}}" ng-hashchange="changeCategory()">{{c.name}}</a>
+				  </li>
+				</ul>
+			</div>
+			<div class="col-md-10">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div ng-repeat="b in panelData" class="panel panel-default bzns-panel">
+					<div class="panel-heading" role="tab" id="heading{{b.id}}">
+					  <h4 class="panel-title">
+					    <a role="button" class="collapsed" data-toggle="collapse" target="_self" data-parent="#accordion" href="#collapse{{b.id}}" aria-expanded="false" aria-controls="collapse{{b.id}}">
+					      <img src="{{b.profileImg}}" class="bzns-profile img-circle">
+					      <h3>{{b.name}} <small>{{b.address}} {{b.city}}</small></h3>
+					      <img class="pull-left stars" src="assets/img/dummy/stars.png">
+					      <span>{{b.avgRating}}/5 <span>{{b.totalReviews | number}} Reviews</span></span>
+					      <p>
+					      	{{b.description}}
+					      </p>
+					    </a>
+					  </h4>
+					</div>
+					<div id="collapse{{b.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{b.id}}">
+					  <div class="panel-body">
+					    Comments here
+					  </div>
+					</div>
+				  </div>
+				  <p ng-show="panelData.length==0">Nothing to display.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
