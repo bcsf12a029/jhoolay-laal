@@ -9,7 +9,21 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <business-slide ng-repeat="slide in slidesData" slide-number="{{$index}}" bzns-obj="slide"></business-slide>
+    <div ng-repeat="slide in slides" class="item" ng-class="{active:$index==0}">
+      <div class="bzns-slide">
+        <div class="container">
+            <img src="{{slide.profileImg}}" class="img-circle bzns-profile">
+            <div class="rev-desc">
+              <img class="stars" src="assets/img/dummy/stars.png">
+              <span>{{ slide.avgRating }}/5 <span>{{ slide.totalReviews | number }} Reviews</span></span>
+              <h3>{{ slide.name }} <span>{{ slide.address }} {{ slide.city }}</span></h3>
+              <p>
+                {{ slide.description }}
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Controls -->

@@ -6,10 +6,6 @@ app.controller('homeController', ['$scope', 'home', 'user', function($scope,home
 	this.cities = null
 	this.categories = null;
 
-	home.getTopBzns().then(function(data){
-		that.top3Biz = data;
-	});
-
 	home.getCities().then(function(data){
 		that.cities = data;
 	});
