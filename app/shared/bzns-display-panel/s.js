@@ -12,8 +12,9 @@ app.factory('bznsDispPanelSrvc', ['$cookies', '$http', '$q', function($cookies, 
 	};
 
 	var getDataFileName = function(id){
+
 		var n="";
-		switch(id){
+		switch(id.toString()){
 			case '2': n="data/food-biz.json"; break;
 			case '1': n="data/furniture-biz.json"; break;
 			case '3': n="data/cloth-biz.json"; break;
@@ -28,18 +29,19 @@ app.factory('bznsDispPanelSrvc', ['$cookies', '$http', '$q', function($cookies, 
 		return n;
 	};
 
-	o.category = $cookies.get(cookies.category) || 2;
+	o.currentCtg = $cookies.get(cookies.category) || 2;
 
 	o.changeCategory = function(id){
-		this.category = id;
-		o.category = id;
+		o.currentCtg = id;
 		setCookie(cookies.category, id);
 		var d = $q.defer();
 
 		$http.get(getDataFileName(id)).then(function(data){
 			d.resolve(angular.fromJson(data.data));
-			d.reject(data.data);
-		})
+		},function(reason){
+			console.log(reason);
+			d.reject(reason);
+		});
 
 		return d.promise;
 	};

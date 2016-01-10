@@ -2,11 +2,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-				<ul id="categories" class="nav nav-pills nav-stacked">
+				<uib-tabset type="pills" vertical="true">
+					<uib-tab ng-repeat="c in categories" ng-click="changeCategory(c.id)" active="currentCtg==c.id" heading="{{c.name}}"></uib-tab>
+				</uib-tabset>
+				<!-- <ul id="categories" class="nav nav-pills nav-stacked">
 				  <li role="presentation" ng-class="{active:bdpc.category==c.id}" ng-repeat="c in categories">
 				  	<a href="#/category/{{c.id}}" ng-hashchange="changeCategory()">{{c.name}}</a>
 				  </li>
-				</ul>
+				</ul> -->
 			</div>
 			<div class="col-md-10">
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

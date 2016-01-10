@@ -1,23 +1,20 @@
-app.controller('BznsDispPanelCtrl', ['$scope', '$routeParams','bznsDispPanelSrvc', '$location',function(scope, $routeParams, srvc, $location){
+app.controller('BznsDispPanelCtrl', ['$scope', 'bznsDispPanelSrvc', '$location',function(scope, srvc, loc){
 	
-	var that = this;
 	scope.panelData = [];
 	scope.categories = [];
+	scope.currentCtg = srvc.currentCtg;
 
 	srvc.getCategories().then(function(ctgs){
 		scope.categories = ctgs;
 	});
 
-	this.category = srvc.category;
-
-	var changeCategory = function(){
-		srvc.changeCategory($routeParams.ctg || that.category).then(function(data){
+	scope.changeCategory = function(id){
+		scope.currentCtg = id;
+		srvc.changeCategory(id).then(function(data){
 			scope.panelData = data;
 		},function(reason){scope.panelData=[];});
 	};
 
-	changeCategory();
-	scope.changeCategory = angular.bind(this,changeCategory);
+	scope.changeCategory(scope.currentCtg);
 
-	$location.hash("/");
 }]);
