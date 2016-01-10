@@ -300,6 +300,7 @@ body {
 
 .panel-heading a:focus,.panel-heading a{
 	display: block;
+	outline: none;
 }
 
 .bzns-panel .panel-heading span{
