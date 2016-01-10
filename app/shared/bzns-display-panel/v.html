@@ -5,36 +5,23 @@
 				<uib-tabset type="pills" vertical="true">
 					<uib-tab ng-repeat="c in categories" ng-click="changeCategory(c.id)" active="currentCtg==c.id" heading="{{c.name}}"></uib-tab>
 				</uib-tabset>
-				<!-- <ul id="categories" class="nav nav-pills nav-stacked">
-				  <li role="presentation" ng-class="{active:bdpc.category==c.id}" ng-repeat="c in categories">
-				  	<a href="#/category/{{c.id}}" ng-hashchange="changeCategory()">{{c.name}}</a>
-				  </li>
-				</ul> -->
 			</div>
 			<div class="col-md-10">
-				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-				  <div ng-repeat="b in panelData" class="panel panel-default bzns-panel">
-					<div class="panel-heading" role="tab" id="heading{{b.id}}">
-					  <h4 class="panel-title">
-					    <a role="button" class="collapsed" data-toggle="collapse" target="_self" data-parent="#accordion" href="#collapse{{b.id}}" aria-expanded="false" aria-controls="collapse{{b.id}}">
-					      <img src="{{b.profileImg}}" class="bzns-profile img-circle">
+				<p ng-show="panelData.length==0">Nothing to display.</p>
+				<uib-accordion close-others="true">
+					<uib-accordion-group panel-class="bzns-panel" ng-repeat="b in panelData">
+				    	<uib-accordion-heading>
+				    	  <img src="{{b.profileImg}}" class="bzns-profile img-circle">
 					      <h3>{{b.name}} <small>{{b.address}} {{b.city}}</small></h3>
 					      <img class="pull-left stars" src="assets/img/dummy/stars.png">
 					      <span>{{b.avgRating}}/5 <span>{{b.totalReviews | number}} Reviews</span></span>
 					      <p>
 					      	{{b.description}}
 					      </p>
-					    </a>
-					  </h4>
-					</div>
-					<div id="collapse{{b.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{b.id}}">
-					  <div class="panel-body">
-					    Comments here
-					  </div>
-					</div>
-				  </div>
-				  <p ng-show="panelData.length==0">Nothing to display.</p>
-				</div>
+				    	</uib-accordion-heading>
+				    	Comments Here...
+				    </uib-accordion-group>
+				</uib-accordion>
 			</div>
 		</div>
 	</div>
